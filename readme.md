@@ -1,4 +1,4 @@
-#Quick start for simple web projects
+# Quick start for simple web projects
 Based partially on Google's [Web Starter Kit](https://developers.google.com/web/starter-kit)
 
 

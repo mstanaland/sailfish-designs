@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sailfish sign up</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:500|Source+Sans+Pro:400,700" rel="stylesheet">
+
+  <!--build:css css/main.min.css-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--endbuild-->
+</head>
+<body>
+  <div class="signup-wrapper">
+    <span class="signup-logo">Booz Allen Sailfish</span>
+
+
+    <div class="signup-main">
+      <div class="signup-form">
+        <div class="signup-form-content">
+          <form action="">
+            <h1>Get started with a free account</h1>
+            <h2>
+              <span>Always free for government and education employees.</span>
+              <span>Others can try Sailfish free for two weeks — no credit card required.</span>
+            </h2>
+            <div class="signup-form-group">
+              <label for="email">Work Email Address</label>
+              <input id="email" type="email">
+              <div id="signup-trial-warning" class="signup-trial-warning">
+                Your trial will end after two weeks because your email doesn't end in .gov, .mil, or .edu
+              </div>
+            </div>
+            <div class="signup-form-group signup-row">
+              <div class="signup-col">
+                <label for="first-name">First Name</label>
+                <input id="first-name" type="text" name="first-name">
+              </div>
+              <div class="signup-col">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" type="text" name="last-name">
+              </div>
+            </div>
+            <div class="signup-form-group">
+              <label for="password">Password</label>
+              <input id="password" type="password" name="password">
+              <button id="show-hide-button" class="signup-show-hide-button" type="button">Show</button>
+            </div>
+            <div class="signup-form-group signup-submit-group">
+              <button type="submit" class="signup-submit-button">Create Free Account</button>
+            </div>
+            <p class="signup-legal">
+              <span>By clicking this button I agree to the </span>
+              <span><a href="#">End User License Agreement</a></span></p>
+            <p class="signup-help">
+              <span>Need help? Contact </span>
+              <span><a href="mailto:sailfish@bah.com">sailfish@bah.com</a></span>
+            </p>
+          </form>
+
+          <div class="signup-signin">
+            <span>Already have an account?</span>
+            <a class="signup-signin-button" href="sign-in.html">Sign in</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="signup-features">
+      <div class="signup-features-text">
+        <h3>Data Analytics for Teams</h3>
+        <ul role="list">
+          <li role="listitem">Find, share and collaborate on data</li>
+          <li role="listitem">Ask questions and analyze your data</li>
+          <li role="listitem">Get help from 600+ Booz Allen experts</li>
+        </ul>
+        <a href="#" class="signup-learnmore-button">Learn more</a>
+      </div>
+    </div>
+  </div>
+
+  <!--build:js js/signup.min.js-->
+  <script src="js/signup.js" charset="utf-8"></script>
+  <!--endbuild-->
+</body>
+</html>

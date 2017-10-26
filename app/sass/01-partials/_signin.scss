@@ -1,0 +1,14 @@
+.signin-error {
+  margin: $spacing 0;
+  color: $color-error;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+
+  li {
+    margin-bottom: $spacing / 2;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

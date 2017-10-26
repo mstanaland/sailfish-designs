@@ -1,0 +1,321 @@
+.signup-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: $color-text;
+}
+
+.signup-logo {
+  position: fixed;
+  top: $spacing;
+  left: $spacing;
+  font-size: 26px;
+  font-family: $oswald;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+
+  @include tablet {
+    left: $spacing - 10px;
+  }
+
+  @include mobile {
+    display: block;
+    position: static;
+    padding: $spacing;
+    color: $color-booz-primary;
+  }
+}
+
+.signup-features {
+  display: flex;
+  height: 100%;
+  width: $features-width;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #101416 url('../images/signup-woman-with-tablet.jpg') no-repeat 0 0;
+  background-size: cover;
+  overflow: hidden;
+
+  @include tablet {
+    width: $features-width-tablet;
+  }
+
+  @include mobile {
+    display: block;
+    position: static;
+    height: auto;
+    width: 100%;
+    margin-top: 3rem;
+    background: #1E2E30;
+  }
+}
+
+.signup-features-text {
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  padding: $spacing;
+  padding-bottom: $spacing * 2;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  // top: 600px;
+  font-size: 16px;
+  line-height: 1.35;
+  background: -moz-linear-gradient(top, rgba(16,20,22,0) 0%, rgba(16,20,22,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(16,20,22,0) 0%,rgba(16,20,22,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(16,20,22,0) 0%,rgba(16,20,22,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  @include tablet {
+    font-size: 15px;
+    padding: $spacing - 10px;
+    padding-bottom: $spacing;
+  }
+
+  @include mobile {
+    position: relative;
+    // background: none;
+  }
+  h3 {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+
+    @include tablet {
+      font-size: 22px;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 0.75em;
+    padding-left: 30px;
+    background: url('../images/check.svg') no-repeat 0 4px;
+  }
+}
+
+.signup-learnmore-button {
+  display: block;
+  max-width: 200px;
+  margin-top: 1.5em;
+  padding: 0.65em 2em;
+  border: solid 1px rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  font-weight: $font-bold;
+
+  @include mobile {
+    max-width: 100%;
+  }
+}
+
+.signup-main {
+  height: 100%;
+  position: relative;
+  margin-left: $features-width;
+
+  @include tablet {
+    margin-left: $features-width-tablet;
+  }
+
+  @include mobile {
+    height: auto;
+    margin-left: 0;
+  }
+}
+
+.signup-signin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: $spacing;
+  margin-right: $spacing;
+  font-size: 14px;
+  color: $color-gray-text;
+
+  @include mobile {
+    position: static;
+    text-align: center;
+    margin-right: 0;
+    margin-top: 2em;
+
+    span {
+      display: block;
+      margin-bottom: 0.75em;
+    }
+  }
+}
+
+.signup-signin-button {
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0.6em 1.2em;
+  border: solid 1px $color-booz-primary;
+  border-radius: 4px;
+  color: $color-booz-primary;
+  font-size: inherit;
+  font-weight: $font-bold;
+  line-height: 1;
+}
+
+.signup-form {
+  width: 75%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 90px;
+
+  @include tablet {
+    width: 100%;
+    padding-left: $spacing;
+    padding-right: $spacing;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding-top: 0;
+    padding-left: $spacing;
+    padding-right: $spacing;
+  }
+}
+
+.signup-form-content {
+  h1 {
+    -webkit-font-smoothing: antialiased;
+    margin-top: $spacing;
+    margin-bottom: 0.25em;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 2.5rem;
+    font-size: 16px;
+    line-height: 1.4;
+    color: $color-gray-text;
+
+    span {
+      display: block;
+
+      @include mobile {
+        display: inline;
+      }
+    }
+  }
+
+  .signup-form-group {
+    position: relative;
+    margin-bottom: 1.25em;
+
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+      font-size: 16px;
+    }
+
+    input {
+      -webkit-appearance: none;
+      appearance: none;
+      display: block;
+      width: 100%;
+      padding: 0.8em;
+      border: solid 1px #C1C5CA;
+      border-radius: 3px;
+      font-size: 16px;
+      font-family: $source-sans;
+      line-height: normal;
+    }
+
+    &.signup-submit-group {
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+  }
+}
+
+.signup-trial-warning {
+  display: none;
+  margin-top: 0.5em;
+  margin-bottom: 1.75em;
+  color: $color-gray-text;
+  font-size: 14px;
+
+  &.show {
+    display: block;
+  }
+}
+
+.signup-show-hide-button {
+  @include unstyled-button;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  color: $color-booz-primary;
+  line-height: 1;
+}
+
+.signup-row {
+  display: flex;
+  margin-right: 1 - $gutter-size / 2;
+  margin-left: 1 - $gutter-size / 2;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.signup-col {
+  padding-left: $gutter-size / 2;
+  padding-right: $gutter-size / 2;
+  flex-grow: 1;
+
+  @include mobile {
+    margin-bottom: 1.25em;
+  }
+}
+
+.signup-submit-button {
+  @include unstyled-button;
+  padding: 0.65em 2em;
+  font-size: 18px;
+  font-weight: $font-bold;
+  border: solid 1px $color-booz-primary;
+  border-radius: 4px;
+  color: white;
+  background: $color-booz-primary;
+
+  @include mobile {
+    display: block;
+    width: 100%;
+  }
+}
+
+.signup-legal,
+.signup-help {
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: $color-gray-text;
+  font-size: 14px;
+  line-height: 1.3;
+
+  @include mobile {
+    margin-bottom: 1.5em;
+  }
+
+  a {
+    text-decoration: underline;
+    color: inherit;
+  }
+
+  span {
+    @include mobile {
+      display: block;
+    }
+  }
+}

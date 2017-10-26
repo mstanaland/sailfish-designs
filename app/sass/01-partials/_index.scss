@@ -1,0 +1,10 @@
+.design-chooser {
+  li {
+    margin-top: $spacing;
+
+    a {
+      display: block;
+      line-height: $base-line-height;
+    }
+  }
+}

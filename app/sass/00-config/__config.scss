@@ -1,0 +1,31 @@
+// @import "colors"
+@import "mixins";
+@import "utilities";
+@import "meyer-reset";
+
+$oswald: 'Oswald', sans-serif;
+$source-sans: 'Source Sans Pro', sans-serif;
+
+
+// Colors
+$color-text:         #222;
+$color-background:   #fff;
+$color-booz-primary: #12807D;
+$color-gray-text:    #6c6c6c;
+$color-error:        #d01814;
+
+// Default typograhy settings
+$base-font-size:     16px;
+$base-line-height:   24px;
+$sans-serif:         $source-sans;
+$serif:              serif;
+$font-regular:       400;
+$font-medium:        500;
+$font-bold:          700;
+
+
+
+$features-width: 400px;
+$features-width-tablet: 300px;
+$spacing: 30px;
+$gutter-size: 20px;
